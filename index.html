@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="examApp">
+<head>
+    <meta charset="utf-8">
+    <title>myWeb - Peter</title>
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/nvd3/build/nv.d3.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/oclazyload/dist/ocLazyLoad.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/d3/d3.js"></script>
+    <script src="bower_components/nvd3/build/nv.d3.js"></script>
+    <script src="bower_components/angular-nvd3/dist/angular-nvd3.js"></script>
+    <script src="js/app.module.js"></script>
+    <script src="js/app.config.js"></script>
+    <script src="js/mainController.js"></script>
+</head>
+<body ng-controller="MainCtrl">
+<div id="main" class="container-fluid">
+    <div id="sidebar">
+        <a href="#!/analysis"
+            class="list-group-item"
+            ng-class="{active:isActive('/analysis')}">
+            <span>Data Analysis</span>
+        </a>
+        <a href="#!/weather"
+            class="list-group-item"
+            ng-class="{active:isActive('/weather')}">
+            <span>Today's Weather</span>
+        </a>
+    </div>
+    <div id="content">
+        <div ng-view class="view-frame"></div>
+    </div>
+</div>
+<script>
+$(function(){
+	$.get( 'http://api.openweathermap.org/data/2.5/weather?q=Taipei,TW', function(resp){
+		alert( JSON.stringify(resp) );
+	});
+
+
+});
+</script>
+</body>
+</html>

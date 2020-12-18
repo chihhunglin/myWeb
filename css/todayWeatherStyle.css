@@ -1,0 +1,89 @@
+.content-body__alert {
+  margin: 10px 0 10px 0;
+  padding: 8px;
+}
+
+.content-body__alert > .bg-danger {
+  border: 1px solid #742222;
+}
+
+.content-body__form {
+  margin: 30px 30px 30px 20px;
+}
+
+.content-body__form > .form-group {
+  margin-right: 30px;
+}
+
+#loading-backdrop {
+  background-color: #000;
+  display: block;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+}
+
+#loading {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  text-align: center;
+  padding: 100px;
+  color: #fff;
+}
+
+.weather-icons {
+  display: inline-block;
+  vertical-align: middle;
+  height: 80px;
+}
+
+.weather-text {
+  display: inline-block;
+  margin-left: 40px;
+  height: 80px;
+  vertical-align: top;
+  text-align: center;
+}
+
+.weather-text__main {
+  font-size: 30px;
+}
+
+.weather-temperature,
+.weather-humidity {
+  font-size: 24px;
+  height: 60px;
+}
+
+[class^="icons-"],
+[class*=" icons-"] {
+  background-image: url("../img/icons.png");
+  display: inline-block;
+  vertical-align: top;
+  height: 60px;
+  width: 60px;
+}
+
+.icons-unknow {
+  background-position: -150px -530px;
+}
+
+.icons-cloud {
+  background-position: -70px -380px;
+}
+
+.icons-rain {
+  background-position: -290px -380px;
+}
+
+.icons-clear {
+  background-position: -70px -20px;
+}

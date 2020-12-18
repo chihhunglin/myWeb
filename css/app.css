@@ -1,0 +1,56 @@
+html, body {
+  height: 100%;
+}
+
+#main {
+  height: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#sidebar {
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+  height: 100%;
+}
+
+#sidebar > .list-group-item {
+  border-radius: 0;
+  padding: 5px 5px 5px 20px;
+  border-color: #c0c0c0;
+  font-size: 12px;
+  font-family: Arial;
+  background-color: #fff;
+}
+
+#sidebar > .list-group-item.active {
+  color: #555;
+  font-weight: bold;
+  border-color: #2a9fcd;
+  background-color: #E7EBFF;
+}
+
+#content {
+  display: inline-block;
+  width: calc(80% - 8px);
+  height: 100%;
+}
+
+.content-header {
+  padding: 4px;
+  line-height: 14px;
+  font-size: 16px;
+  font-family: Arial;
+}
+
+.horizontal-line {
+  width: auto;
+  border-bottom: 1px solid #000;
+  margin: 0 4px;
+}
+
+.content-body {
+  margin: 4px;
+  border: 1px solid #c0c0c0;
+}
